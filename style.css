@@ -1,22 +1,66 @@
-.stats-container {
-    display: flex;
-    justify-content: space-around;
-    padding: 30px 10px;
-    background: rgba(255, 215, 0, 0.05);
-    border-top: 1px solid rgba(255, 215, 0, 0.2);
-    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+/* تنسيق عام للموقع */
+body {
+    background-color: #0f172a; /* خلفية كحلية غامقة جداً وراقية */
+    color: #ffffff; /* لون النصوص العادية (أبيض) */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl; /* لضمان اتساق اللغة العربية */
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
-.stat-number {
+/* تنسيق الصورة الشخصية */
+img {
+    max-width: 80%; /* تصغير حجم الصورة */
+    height: auto;
+    border-radius: 20px; /* حواف دائرية */
+    border: 3px solid #d4af37; /* إطار ذهبي حول الصورة */
+    margin: 20px auto;
     display: block;
-    font-size: 24px;
-    font-weight: bold;
-    color: gold;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* ظل ليعطي عمق للصورة */
 }
 
-.stat-item p {
-    font-size: 12px;
-    margin: 0;
-    color: #cbd5e1;
+/* العناوين الرئيسية باللون الذهبي */
+h1, h2, h3 {
+    color: #d4af37; /* لون ذهبي كلاسيكي */
+    margin-top: 30px;
+}
+
+/* النصوص الفرعية والشرح باللون الأبيض */
+p, li {
+    color: #f1f5f9; /* أبيض مريح للعين */
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+/* تنسيق القوائم (ماذا أقدم) */
+ul {
+    list-style: none; /* إلغاء النقط التقليدية */
+    padding: 0;
+}
+
+li::before {
+    content: "•"; 
+    color: #d4af37; /* جعل نقطة القائمة ذهبية */
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-right: -1em;
+}
+
+/* تنسيق الروابط (مثل احجز استشارة) */
+a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px dashed #d4af37;
+}
+
+a:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
 }
