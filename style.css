@@ -1,110 +1,22 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #0f172a;
-  color: #ffffff;
-  line-height: 1.8;
-  direction: rtl; /* لضبط الاتجاه من اليمين لليسار */
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 10px;
+    background: rgba(255, 215, 0, 0.05);
+    border-top: 1px solid rgba(255, 215, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+    text-align: center;
 }
 
-.hero {
-  text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(135deg, #020617, #0f172a);
+.stat-number {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: gold;
 }
 
-/* تعديل لصورتك الشخصية */
-.profile-img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  border: 3px solid gold;
-  object-fit: cover;
-}
-
-.hero h1 {
-  font-size: 28px;
-  margin-bottom: 15px;
-  color: gold;
-}
-
-.hero p {
-  max-width: 600px;
-  margin: auto;
-  opacity: 0.9;
-}
-
-.btn-main {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 15px 30px;
-  background-color: gold;
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 30px;
-  transition: 0.3s;
-}
-
-.btn-main:hover {
-  transform: scale(1.05);
-  background-color: #ffd700;
-}
-
-.section {
-  padding: 50px 20px;
-  max-width: 900px;
-  margin: auto;
-  text-align: center;
-}
-
-.section h2 {
-  color: gold;
-  margin-bottom: 20px;
-}
-
-.section.dark {
-  background-color: #020617;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-/* تنسيق روابط التواصل الاجتماعي الجديدة */
-.contact-links {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-width: 350px;
-  margin: 20px auto;
-}
-
-.social-item {
-  text-decoration: none;
-  color: white;
-  padding: 12px;
-  border-radius: 10px;
-  font-weight: bold;
-  border: 1px solid rgba(255,215,0,0.3);
-  transition: 0.3s;
-}
-
-.social-item:hover {
-  border-color: gold;
-  background: rgba(255,215,0,0.1);
-}
-
-.footer {
-  text-align: center;
-  padding: 30px;
-  font-size: 14px;
-  color: #64748b;
+.stat-item p {
+    font-size: 12px;
+    margin: 0;
+    color: #cbd5e1;
 }
