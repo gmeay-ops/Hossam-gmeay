@@ -8,39 +8,32 @@
 </head>
 <body>
 
-    <header>
-        <img src="your-image.jpg" alt="حسام جميعي" class="profile-img">
-        <h1>حسام جميعي</h1>
-        <p class="subtitle">رائد أعمال ومستشار عقاري بخبرة عملية في الاستثمار، التسويق، والبيع.</p>
+    <header class="main-header">
+        <div class="container">
+            <div class="profile-placeholder"></div> 
+            <h1>حسام جميعي</h1>
+            <p class="subtitle">رائد أعمال ومستشار عقاري بخبرة عملية في الاستثمار والتسويق.</p>
+        </div>
     </header>
 
-    <section class="about">
-        <h2>من هو حسام جميعي؟</h2>
-        <p>أعمل بعقلية شريك استراتيجي وليس وسيط بيع، متخصص في استشارات المطورين، الشراكات الاستثمارية، ودراسات الجدوى للمشاريع العقارية.</p>
-    </section>
+    <main class="container">
+        <section class="about section">
+            <h2>من هو حسام جميعي؟</h2>
+            <p>أعمل بعقلية شريك استراتيجي وليس وسيط بيع، متخصص في استشارات المطورين، الشراكات الاستثمارية، ودراسات الجدوى للمشاريع العقارية.</p>
+        </section>
 
-    <section class="slider-section">
-        <h2 class="section-title">المسار التعليمي والاعتمادات</h2>
-        <p class="slider-info">حاصل على 30 شهادة معتمدة من منصة "المنتور" العالمية (اسحب لليسار للمشاهدة)</p>
-        
-        <div class="cert-slider">
-            <div class="cert-item"><img src="cert1.jpg" onclick="openPopup(this.src)" alt="شهادة"></div>
-            <div class="cert-item"><img src="cert2.jpg" onclick="openPopup(this.src)" alt="شهادة"></div>
-            <div class="cert-item"><img src="cert3.jpg" onclick="openPopup(this.src)" alt="شهادة"></div>
-            <div class="cert-item"><img src="cert4.jpg" onclick="openPopup(this.src)" alt="شهادة"></div>
+        <section class="achievements section">
+            <h2>المسار التعليمي والاعتمادات</h2>
+            <div class="achievement-card">
+                <p>حاصل على <strong>30 شهادة معتمدة</strong> من منصة "المنتور" العالمية في مجالات الإدارة، التسويق، والبيع العقاري.</p>
             </div>
-    </section>
+        </section>
+    </main>
 
-    <div id="imagePopup" class="popup-overlay" onclick="closePopup()">
-        <span class="close-btn">&times;</span>
-        <img class="popup-content" id="expandedImg">
-    </div>
-
-    <footer>
+    <footer class="main-footer">
         <p>تواصل معي للاستشارات العقارية</p>
         <a href="https://wa.me/yournumber" class="gold-button">احجز استشارة عبر واتساب</a>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
