@@ -1,64 +1,46 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>حسام جميعي | مستشار واستراتيجي عقاري</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حسام جميعي | مستشار استراتيجي عقاري</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <section class="hero">
-    <img src="me.jpg" alt="حسام جميعي" class="profile-img" onerror="this.src='https://via.placeholder.com/150/gold/000?text=Hossam'">
-    <h1>أنا لا أبيع وحدات… أنا أبني شراكات عقارية مربحة</h1>
-    <p>مستشار واستراتيجي عقاري أعمل مع المطورين والمستثمرين لتعظيم العائد وبناء مشاريع ناجحة.</p>
-    <a class="btn-main" href="https://wa.me/message/K4XPSMWJGDRTF1" target="_blank">احجز استشارة واتساب 💬</a>
-  </section>
+    <header>
+        <img src="your-image.jpg" alt="حسام جميعي" class="profile-img">
+        <h1>حسام جميعي</h1>
+        <p class="subtitle">رائد أعمال ومستشار عقاري بخبرة عملية في الاستثمار، التسويق، والبيع.</p>
+    </header>
 
-  <section class="stats-container">
-      <div class="stat-item">
-          <span class="stat-number">+10</span>
-          <p>سنوات خبرة</p>
-      </div>
-      <div class="stat-item">
-          <span class="stat-number">+50</span>
-          <p>شراكة ناجحة</p>
-      </div>
-      <div class="stat-item">
-          <span class="stat-number">+100</span>
-          <p>استشارة عقارية</p>
-      </div>
-  </section>
+    <section class="about">
+        <h2>من هو حسام جميعي؟</h2>
+        <p>أعمل بعقلية شريك استراتيجي وليس وسيط بيع، متخصص في استشارات المطورين، الشراكات الاستثمارية، ودراسات الجدوى للمشاريع العقارية.</p>
+    </section>
 
-  <section class="section">
-    <h2>من هو حسام جميعي؟</h2>
-    <p>رائد أعمال ومستشار عقاري بخبرة عملية في الاستثمار، التسويق، البيع، وإدارة المشاريع العقارية. أعمل بعقلية شريك استراتيجي وليس وسيط بيع.</p>
-  </section>
+    <section class="slider-section">
+        <h2 class="section-title">المسار التعليمي والاعتمادات</h2>
+        <p class="slider-info">حاصل على 30 شهادة معتمدة من منصة "المنتور" العالمية (اسحب لليسار للمشاهدة)</p>
+        
+        <div class="cert-slider">
+            <div class="cert-item"><img src="cert1.jpg" onclick="openPopup(this.src)" alt="شهادة"></div>
+            <div class="cert-item"><img src="cert2.jpg" onclick="openPopup(this.src)" alt="شهادة"></div>
+            <div class="cert-item"><img src="cert3.jpg" onclick="openPopup(this.src)" alt="شهادة"></div>
+            <div class="cert-item"><img src="cert4.jpg" onclick="openPopup(this.src)" alt="شهادة"></div>
+            </div>
+    </section>
 
-  <section class="section dark">
-    <h2>ماذا أقدم؟</h2>
-    <ul>
-      <li>استشارات للمطورين العقاريين</li>
-      <li>شراكات استراتيجية ومشاركة أرباح</li>
-      <li>تحليل استثماري ودراسات جدوى</li>
-      <li>إطلاق وتسويق المشاريع</li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h2>تواصل معي عبر المنصات</h2>
-    <div class="contact-links">
-      <a href="https://www.facebook.com/share/18Khx6z7DN/?mibextid=wwXIfr" target="_blank" class="social-item">فيسبوك الشخصي 👤</a>
-      <a href="https://www.facebook.com/share/1DwBq1P2Yc/?mibextid=wwXIfr" target="_blank" class="social-item">الصفحة الرسمية 👍</a>
-      <a href="https://www.tiktok.com/@gmeay1" target="_blank" class="social-item">تيك توك 🎵</a>
-      <a href="https://www.instagram.com/gmeay1?igsh=cDBieXAzMWs0Zzlv&utm_source=qr" target="_blank" class="social-item">إنستجرام 📸</a>
+    <div id="imagePopup" class="popup-overlay" onclick="closePopup()">
+        <span class="close-btn">&times;</span>
+        <img class="popup-content" id="expandedImg">
     </div>
-  </section>
 
-  <footer class="footer">
-    <p>جميع الحقوق محفوظة - حسام جميعي</p>
-    <p>رقم الهاتف: 01065652642</p>
-  </footer>
+    <footer>
+        <p>تواصل معي للاستشارات العقارية</p>
+        <a href="https://wa.me/yournumber" class="gold-button">احجز استشارة عبر واتساب</a>
+    </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
