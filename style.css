@@ -1,80 +1,67 @@
+/* تنسيقات عامة */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #0f172a;
-  color: #ffffff;
-  line-height: 1.8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
 }
 
-.hero {
-  text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(135deg, #020617, #0f172a);
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.hero img {
-  border-radius: 50%;
-  margin-bottom: 20px;
+/* الهيدر */
+.main-header {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 60px 0;
 }
 
-.hero h1 {
-  font-size: 28px;
-  margin-bottom: 15px;
+.subtitle {
+    color: #d4af37; /* لون ذهبي */
+    font-size: 1.2rem;
 }
 
-.hero p {
-  max-width: 600px;
-  margin: auto;
-  opacity: 0.9;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 25px;
-  background-color: gold;
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 30px;
-}
-
+/* الأقسام */
 .section {
-  padding: 50px 20px;
-  max-width: 900px;
-  margin: auto;
+    background: #fff;
+    margin: 20px 0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
-.section h2 {
-  color: gold;
-  margin-bottom: 20px;
+.achievement-card {
+    border-right: 4px solid #d4af37;
+    background: #fdfdfd;
+    padding: 15px;
+    display: inline-block;
 }
 
-.section.dark {
-  background-color: #020617;
+/* الأزرار */
+.gold-button {
+    display: inline-block;
+    background: #d4af37;
+    color: #000;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+.gold-button:hover {
+    background: #b8962d;
+    transform: translateY(-3px);
 }
 
-ul li {
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-.social {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.social a {
-  color: gold;
-  text-decoration: none;
-  border: 1px solid gold;
-  padding: 10px 18px;
-  border-radius: 25px;
+.main-footer {
+    padding: 40px 0;
+    background: #eee;
 }
