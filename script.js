@@ -1,9 +1,8 @@
-// Smooth scroll (لو ضفت لينكات داخلية)
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
+function openPopup(src) {
+    document.getElementById("imagePopup").style.display = "flex";
+    document.getElementById("expandedImg").src = src;
+}
+
+function closePopup() {
+    document.getElementById("imagePopup").style.display = "none";
+}
