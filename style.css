@@ -1,71 +1,79 @@
-/* تنسيق عام */
+/* التنسيق المطور لتقليل المساحة البصرية */
 body {
-    background-color: #0f172a; /* كحلي غامق فخم */
+    background-color: #0f172a;
     color: #ffffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
-    padding: 0;
     text-align: center;
-    line-height: 1.6;
 }
 
-/* الصورة الشخصية */
+/* تصغير صورة البروفايل */
 .profile-img {
-    max-width: 250px;
-    height: auto;
-    border-radius: 20px;
-    border: 3px solid #d4af37;
-    margin-top: 30px;
+    max-width: 180px; /* صغرناها أكتر */
+    border-radius: 50%; /* شكل دائري أرقى */
+    border: 2px solid #d4af37;
+    margin-top: 20px;
 }
 
-h1 { color: #d4af37; margin-bottom: 5px; }
-.subtitle { color: #f1f5f9; font-size: 1.1rem; padding: 0 20px; }
-
-/* قسم الشهادات */
-.slider-section { padding: 40px 0; }
-.section-title { color: #d4af37; border-top: 1px solid rgba(212, 175, 55, 0.3); pt: 20px; }
-.slider-info { font-size: 0.8rem; opacity: 0.7; margin-bottom: 15px; }
+/* تنسيق قسم الشهادات ليكون مضغوطاً */
+.slider-section {
+    padding: 20px 0;
+}
 
 .cert-slider {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    gap: 12px;
-    padding: 20px;
+    gap: 10px;
+    padding: 10px 20px;
     scrollbar-width: none;
 }
-.cert-slider::-webkit-scrollbar { display: none; }
 
-.cert-item { flex: 0 0 150px; scroll-snap-align: start; }
+.cert-item {
+    flex: 0 0 120px; /* عرض أصغر للشهادة الواحدة */
+    scroll-snap-align: start;
+}
+
 .cert-item img {
     width: 100%;
-    height: 120px; /* حجم صغير ومنظم */
+    height: 90px; /* ارتفاع صغير جداً ومنظم */
     object-fit: cover;
     border: 1px solid #d4af37;
-    border-radius: 8px;
-    cursor: pointer;
+    border-radius: 5px;
+    filter: grayscale(30%); /* لمسة جمالية: جعلها رمادية قليلاً وتلون عند الضغط */
+    transition: 0.3s;
 }
 
-/* الـ Pop-up */
-.popup-overlay {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    justify-content: center; align-items: center;
+.cert-item img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
 }
-.popup-content { max-width: 90%; max-height: 80%; border: 2px solid #d4af37; border-radius: 10px; }
-.close-btn { position: absolute; top: 20px; right: 30px; color: #fff; font-size: 40px; cursor: pointer; }
 
-/* الزر الذهبي */
+/* زر الواتساب بشكل أنيق في الأسفل */
 .gold-button {
     display: inline-block;
-    padding: 12px 25px;
+    padding: 10px 20px;
     background-color: #d4af37;
     color: #0f172a;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 25px;
     font-weight: bold;
-    margin: 20px 0 40px;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+/* الـ Pop-up لتكبير الصورة عند الحاجة */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.95);
+    justify-content: center;
+    align-items: center;
+}
+.popup-content {
+    max-width: 95%;
+    max-height: 70%;
+    border: 1px solid #d4af37;
 }
