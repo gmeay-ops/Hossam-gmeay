@@ -3,37 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>حسام جميعي | مستشار استراتيجي عقاري</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Hossam Gmeay | حسام جميعي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --sky-blue: #00CCFF;
+            --bg-black: #000000;
+            --card-bg: #0a0a0a;
+            --text-white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-black);
+            color: var(--text-white);
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(to bottom, #111, var(--bg-black));
+            border-bottom: 2px solid var(--sky-blue);
+        }
+
+        /* تنسيق الصورة الشخصية */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid var(--sky-blue);
+            margin-bottom: 20px;
+            object-fit: cover;
+            box-shadow: 0 0 20px rgba(0, 204, 255, 0.3);
+        }
+
+        header h1 { 
+            margin: 0; 
+            font-size: 2.8rem; 
+            color: var(--sky-blue); 
+            text-shadow: 0 0 10px rgba(0, 204, 255, 0.2);
+        }
+
+        .en-name {
+            display: block;
+            font-size: 1.5rem;
+            margin-top: 5px;
+            color: var(--text-white);
+            opacity: 0.9;
+            letter-spacing: 1px;
+        }
+
+        .experience-badge {
+            display: inline-block;
+            background: rgba(0, 204, 255, 0.1);
+            color: var(--sky-blue);
+            padding: 5px 20px;
+            border-radius: 50px;
+            border: 1px solid var(--sky-blue);
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .container { max-width: 850px; margin: 0 auto; padding: 20px; }
+
+        section {
+            background: var(--card-bg);
+            margin: 25px 0;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #1a1a1a;
+        }
+
+        h2 {
+            color: var(--sky-blue);
+            font-size: 1.6rem;
+            border-right: 4px solid var(--sky-blue);
+            padding-right: 15px;
+            margin-bottom: 20px;
+        }
+
+        p, li { font-size: 1.1rem; color: #e0e0e0; }
+        strong { color: var(--sky-blue); }
+
+        .board-list { list-style: none; padding: 0; }
+        .board-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #1a1a1a;
+            display: flex;
+            align-items: center;
+        }
+        .board-list li i { color: var(--sky-blue); margin-left: 12px; }
+
+        /* شبكة التواصل الاجتماعي */
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: 0.3s ease;
+        }
+
+        .whatsapp { background: #25D366; }
+        .facebook { background: #1877F2; }
+        .tiktok { background: #000000; border: 1px solid var(--sky-blue); }
+        .instagram { background: #E4405F; }
+        .phone { background: var(--sky-blue); color: #000; }
+
+        .social-btn:hover { transform: translateY(-5px); filter: brightness(1.2); }
+        .social-btn i { margin-left: 8px; }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #444;
+            font-size: 0.8rem;
+        }
+
+        .reveal { opacity: 0; transform: translateY(20px); transition: 0.8s all ease; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="container">
-            <div class="profile-placeholder"></div> 
+    <header>
+        <div class="reveal">
+            <img src="profile.jpg" alt="Hossam Gmeay" class="profile-img">
             <h1>حسام جميعي</h1>
-            <p class="subtitle">رائد أعمال ومستشار عقاري بخبرة عملية في الاستثمار والتسويق.</p>
+            <span class="en-name">Hossam Gmeay</span>
+            <div class="experience-badge">خبرة 19 عاماً في المبيعات</div>
         </div>
     </header>
 
-    <main class="container">
-        <section class="about section">
-            <h2>من هو حسام جميعي؟</h2>
-            <p>أعمل بعقلية شريك استراتيجي وليس وسيط بيع، متخصص في استشارات المطورين، الشراكات الاستثمارية، ودراسات الجدوى للمشاريع العقارية.</p>
+    <div class="container">
+        
+        <section class="reveal">
+            <h2>التعريف المهني</h2>
+            <p>رائد أعمال ومستشار استراتيجي، أعمل بعقلية <strong>شريك استراتيجي</strong>. متخصص في استشارات المستثمرين والمطورين، وإدارة شراكات الاستثمار، ودراسات الجدوى العقارية.</p>
+            <p>بفضل الله ساعدت الآلاف في تطوير حياتهم وقدمت حلولاً لتعمير الأرض.</p>
         </section>
 
-        <section class="achievements section">
-            <h2>المسار التعليمي والاعتمادات</h2>
-            <div class="achievement-card">
-                <p>حاصل على <strong>30 شهادة معتمدة</strong> من منصة "المنتور" العالمية في مجالات الإدارة، التسويق، والبيع العقاري.</p>
+        <section class="reveal">
+            <h2>المناصب القيادية</h2>
+            <ul class="board-list">
+                <li><i class="fas fa-building"></i> عضو مجلس إدارة شركة مدن العقارية</li>
+                <li><i class="fas fa-car"></i> رئيس مجلس إدارة شركة أسطول للسيارات</li>
+                <li><i class="fas fa-faucet-drip"></i> عضو مجلس إدارة شركة الفاروق للأمن الغذائي</li>
+            </ul>
+        </section>
+
+        <section class="reveal">
+            <h2>الاعتمادات</h2>
+            <p>حاصل على <strong>30 شهادة معتمدة</strong> في إدارة الأعمال، التسويق، واحتراف البيع العقاري.</p>
+        </section>
+
+        <section class="reveal">
+            <h2>تواصل معي</h2>
+            <div class="social-grid">
+                <a href="https://wa.me/message/K4XPSMWJGDRTF1" target="_blank" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i> واتساب</a>
+                <a href="https://www.facebook.com/share/18HeNxrWhB/" target="_blank" class="social-btn facebook"><i class="fab fa-facebook"></i> الرسمية</a>
+                <a href="https://www.facebook.com/share/1ANWxHsGhC/" target="_blank" class="social-btn facebook"><i class="fab fa-facebook"></i> الشخصي</a>
+                <a href="https://www.tiktok.com/@gmeay1" target="_blank" class="social-btn tiktok"><i class="fab fa-tiktok"></i> تيك توك</a>
+                <a href="https://www.instagram.com/gmeay1" target="_blank" class="social-btn instagram"><i class="fab fa-instagram"></i> انستجرام</a>
+                <a href="tel:01065652642" class="social-btn phone"><i class="fas fa-phone"></i> اتصل بي</a>
             </div>
         </section>
-    </main>
 
-    <footer class="main-footer">
-        <p>تواصل معي للاستشارات العقارية</p>
-        <a href="https://wa.me/yournumber" class="gold-button">احجز استشارة عبر واتساب</a>
+    </div>
+
+    <footer>
+        <p>© <span id="year"></span> Hossam Gmeay. Built for Excellence.</p>
     </footer>
 
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                if (elementTop < windowHeight - 100) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        reveal();
+    </script>
 </body>
 </html>
