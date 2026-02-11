@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hossam Gmeay | خبير الاستشارات البيعية والعقارية</title>
+    <title>Hossam Gmeay | الاستشاري العقاري والخبير البيعي</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -59,11 +59,9 @@
             border: 1px solid #222;
             text-align: center;
             width: 280px;
-            transition: 0.3s;
         }
 
         .brand-card i { font-size: 2.2rem; color: var(--sky-blue); margin-bottom: 15px; }
-        .brand-card h3 { margin: 10px 0; font-weight: 700; }
 
         /* Form Styling */
         .consulting-form {
@@ -77,21 +75,19 @@
         }
 
         .form-group { margin-bottom: 20px; }
-        label { display: block; margin-bottom: 8px; color: var(--gold); font-weight: 700; font-size: 0.95rem; }
+        label { display: block; margin-bottom: 8px; color: var(--gold); font-weight: 700; }
         
-        input, select, textarea {
+        input, select {
             width: 100%; padding: 14px; border-radius: 10px; border: 1px solid #333;
             background: #000; color: #fff; font-family: 'Cairo'; font-size: 1rem;
             box-sizing: border-box;
         }
 
-        input:focus, select:focus { border-color: var(--sky-blue); outline: none; }
-
         .submit-btn {
             width: 100%; padding: 20px; border: none; border-radius: 12px;
             background: linear-gradient(90deg, #00d2ff, #3a7bd5);
             color: #000; font-weight: 900; font-size: 1.3rem; cursor: pointer;
-            transition: 0.4s; margin-top: 10px;
+            transition: 0.4s;
         }
 
         .submit-btn:hover { transform: scale(1.02); box-shadow: 0 5px 25px rgba(0, 210, 255, 0.4); }
@@ -104,22 +100,22 @@
     <header>
         <h1>حسام جميعي</h1>
         <div class="experience-badge">19 عاماً من الخبرة في مجال المبيعات</div>
-        <p style="max-width: 700px; margin: 25px auto; color: #ccc; font-size: 1.1rem;">
-            استشاري متخصص في إدارة المبيعات وتطوير الاستثمارات العقارية. <br>
-            مؤسس <b>Hossam Gmeay Academy</b> وقائد <b>The Millionaire Club</b>.
+        <p style="max-width: 700px; margin: 25px auto; color: #ccc;">
+            خبير استراتيجي في إدارة المبيعات والاستشارات العقارية. <br>
+            تحت إدارة <b>Hossam Gmeay Academy</b>
         </p>
     </header>
 
     <div class="brand-section">
         <div class="brand-card">
-            <i class="fas fa-chart-line"></i>
+            <i class="fas fa-crown"></i>
             <h3>Power Land Property</h3>
-            <p>السيادة العقارية والأداء القوي</p>
+            <p>السيادة في السوق العقاري</p>
         </div>
         <div class="brand-card">
-            <i class="fas fa-award"></i>
+            <i class="fas fa-rocket"></i>
             <h3>The Millionaire Club</h3>
-            <p>مجتمع صناع النجاح المالي</p>
+            <p>مجتمع صناعة النجاح</p>
         </div>
     </div>
 
@@ -129,59 +125,57 @@
         <form id="consultingForm">
             <div class="form-group">
                 <label>الاسم بالكامل</label>
-                <input type="text" id="name" placeholder="أدخل اسمك الثلاثي" required>
+                <input type="text" id="name" placeholder="أدخل اسمك بالكامل" required>
             </div>
             
             <div class="form-group">
                 <label>رقم الهاتف</label>
-                <input type="tel" id="phone" placeholder="01xxxxxxxxx" required>
+                <input type="tel" id="phone" placeholder="رقم الواتساب" required>
             </div>
 
             <div class="form-group">
-                <label>نوع الاستشارة المطلوبة (المصفوفة العقارية):</label>
+                <label>نوع الاستشارة (مصفوفة الوحدات):</label>
                 <select id="unit_type" required>
-                    <option value="" disabled selected>اختر نوع الوحدة من القائمة...</option>
+                    <option value="" disabled selected>اختر نوع الوحدة...</option>
                     <option value="سكني - سكن رئيسي">وحدة سكنية - سكن رئيسي</option>
                     <option value="سكني - سياحي">وحدة سكنية - سياحي / ساحلي</option>
                     <option value="إداري - مكاتب">مكاتب إدارية</option>
                     <option value="تجاري - محلات">وحدات تجارية / محلات</option>
                     <option value="طبي - عيادات">عيادات / وحدات طبية</option>
                     <option value="استثماري - إعادة بيع">استثمار بغرض إعادة البيع</option>
-                    <option value="استثماري - إيجار">استثمار بغرض الإيجار</option>
-                    <option value="أخرى - استشارة عامة">غير محدد - أحتاج توجيه</option>
+                    <option value="أخرى">استشارة عامة</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <label>الميزانية التقديرية (EGP):</label>
                 <select id="budget">
-                    <option value="3-5 مليون">من 3 إلى 5 مليون</option>
-                    <option value="5-10 مليون">من 5 إلى 10 مليون</option>
-                    <option value="20-50 مليون">من 20 إلى 50 مليون</option>
-                    <option value="أكثر من 50 مليون">أكثر من 50 مليون</option>
-                    <option value="غير محدد">غير متأكد حالياً</option>
+                    <option value="3-5 مليون">3 - 5 مليون</option>
+                    <option value="5-10 مليون">5 - 10 مليون</option>
+                    <option value="أكثر من 20 مليون">أكثر من 20 مليون</option>
+                    <option value="غير محدد">غير محدد حالياً</option>
                 </select>
             </div>
 
             <div class="form-group">
-                <label>المنطقة المفضلة للاستثمار:</label>
-                <select id="location">
-                    <option value="القاهرة الجديدة">القاهرة الجديدة (التجمع)</option>
-                    <option value="العاصمة الإدارية">العاصمة الإدارية الجديدة</option>
-                    <option value="زايد / أكتوبر">الشيخ زايد / 6 أكتوبر</option>
-                    <option value="الساحل الشمالي">الساحل الشمالي</option>
-                    <option value="العين السخنة">العين السخنة</option>
-                    <option value="البحر الأحمر">البحر الأحمر</option>
-                    <option value="أخرى">أماكن أخرى مقترحة</option>
+                <label>المنطقة المفضلة:</label>
+                <select id="location_pref">
+                    <option value="" disabled selected>اختر المنطقة...</option>
+                    <option value="مدينة السادات">مدينة السادات</option>
+                    <option value="القاهرة الجديدة">القاهرة الجديدة</option>
+                    <option value="العاصمة الإدارية">العاصمة الإدارية</option>
+                    <option value="الشيخ زايد / أكتوبر">الشيخ زايد / أكتوبر</option>
+                    <option value="الساحل الشمالي / السخنة">الساحل الشمالي / السخنة</option>
+                    <option value="أخرى">أماكن أخرى</option>
                 </select>
             </div>
 
-            <button type="submit" class="submit-btn">إرسال الطلب للمستشار حسام جميعي <i class="fab fa-whatsapp"></i></button>
+            <button type="submit" class="submit-btn">إرسال البيانات للواتساب <i class="fab fa-whatsapp"></i></button>
         </form>
     </section>
 
     <footer>
-        <p>© 2026 Hossam Gmeay Academy - جميع الحقوق محفوظة</p>
+        <p>© 2026 Hossam Gmeay Academy | ثقة في الله نجاح</p>
     </footer>
 
     <script>
@@ -192,19 +186,20 @@
             const phone = document.getElementById('phone').value;
             const unitType = document.getElementById('unit_type').value;
             const budget = document.getElementById('budget').value;
-            const location = document.getElementById('location').value;
+            const location = document.getElementById('location_pref').value;
             
-            const myNumber = "201030436160"; 
+            // الرقم الخاص بك لاستقبال الطلبات
+            const myNumber = "201065652642"; 
             
-            const message = `🏢 *طلب استشارة VIP من حسام جميعي*%0A` +
+            const message = `🏛️ *طلب استشارة VIP جديدة*%0A` +
                             `--------------------------------%0A` +
                             `👤 *الاسم:* ${name}%0A` +
                             `📞 *الهاتف:* ${phone}%0A` +
                             `🏘️ *نوع الوحدة:* ${unitType}%0A` +
                             `💰 *الميزانية:* ${budget}%0A` +
-                            `📍 *المكان المفضل:* ${location}%0A` +
+                            `📍 *المنطقة:* ${location}%0A` +
                             `--------------------------------%0A` +
-                            `✅ تم الإرسال عبر السيستم الاحترافي للأكاديمية`;
+                            `✅ تم الإرسال عبر سيستم حسام جميعي`;
 
             window.open(`https://wa.me/${myNumber}?text=${message}`, '_blank');
         });
