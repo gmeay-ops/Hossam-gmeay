@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hossam Gmeay | الاستشاري العقاري الأول</title>
+    <title>Hossam Gmeay | خبير الاستشارات البيعية والعقارية</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -22,149 +22,138 @@
             line-height: 1.6;
         }
 
-        /* Header & Profile */
+        /* Header Section */
         header {
             text-align: center;
-            padding: 60px 20px;
+            padding: 80px 20px;
             background: linear-gradient(180deg, #111 0%, #050505 100%);
+            border-bottom: 1px solid #222;
         }
 
-        .profile-img {
-            width: 150px; height: 150px;
-            border-radius: 50%;
-            border: 3px solid var(--sky-blue);
-            margin-bottom: 20px;
-            object-fit: cover;
-        }
-
-        h1 { font-size: 2.5rem; margin: 10px 0; color: var(--sky-blue); }
+        h1 { font-size: 3rem; margin: 10px 0; color: var(--sky-blue); font-weight: 900; }
+        
         .experience-badge {
             background: var(--gold);
             color: #000;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-weight: bold;
+            padding: 8px 25px;
+            border-radius: 30px;
+            font-weight: 900;
             display: inline-block;
+            font-size: 1.2rem;
+            margin-top: 15px;
         }
 
-        /* Stats/Links Section */
+        /* Brand Cards */
         .brand-section {
             display: flex;
             justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
-            padding: 20px;
+            padding: 40px 20px;
         }
 
         .brand-card {
             background: var(--card-bg);
-            padding: 20px;
+            padding: 25px;
             border-radius: 15px;
             border: 1px solid #222;
             text-align: center;
-            width: 250px;
+            width: 280px;
             transition: 0.3s;
         }
 
-        .brand-card:hover { border-color: var(--sky-blue); transform: translateY(-5px); }
-        .brand-card i { font-size: 2rem; color: var(--sky-blue); margin-bottom: 10px; }
+        .brand-card i { font-size: 2.2rem; color: var(--sky-blue); margin-bottom: 15px; }
+        .brand-card h3 { margin: 10px 0; font-weight: 700; }
 
-        /* Professional Form */
+        /* Form Styling */
         .consulting-form {
-            max-width: 800px;
-            margin: 40px auto;
-            background: #111;
+            max-width: 700px;
+            margin: 0 auto 60px;
+            background: #0f0f0f;
             padding: 40px;
             border-radius: 20px;
-            border-top: 5px solid var(--gold);
+            border: 1px solid #222;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.8);
         }
 
-        .form-group { margin-bottom: 25px; }
-        label { display: block; margin-bottom: 10px; color: var(--gold); font-weight: bold; }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; color: var(--gold); font-weight: 700; font-size: 0.95rem; }
         
         input, select, textarea {
-            width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #333;
-            background: #000; color: #fff; font-family: 'Cairo';
+            width: 100%; padding: 14px; border-radius: 10px; border: 1px solid #333;
+            background: #000; color: #fff; font-family: 'Cairo'; font-size: 1rem;
+            box-sizing: border-box;
         }
 
-        .checkbox-group {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-
-        .checkbox-item {
-            background: #000; padding: 10px; border-radius: 5px; border: 1px solid #222;
-            display: flex; align-items: center; gap: 10px; font-size: 0.9rem;
-        }
+        input:focus, select:focus { border-color: var(--sky-blue); outline: none; }
 
         .submit-btn {
-            width: 100%; padding: 18px; border: none; border-radius: 10px;
+            width: 100%; padding: 20px; border: none; border-radius: 12px;
             background: linear-gradient(90deg, #00d2ff, #3a7bd5);
-            color: #000; font-weight: 900; font-size: 1.2rem; cursor: pointer;
-            transition: 0.4s;
+            color: #000; font-weight: 900; font-size: 1.3rem; cursor: pointer;
+            transition: 0.4s; margin-top: 10px;
         }
 
-        .submit-btn:hover { box-shadow: 0 0 20px rgba(0, 210, 255, 0.4); }
+        .submit-btn:hover { transform: scale(1.02); box-shadow: 0 5px 25px rgba(0, 210, 255, 0.4); }
 
-        footer { text-align: center; padding: 40px; color: #555; border-top: 1px solid #222; }
+        footer { text-align: center; padding: 40px; color: #444; border-top: 1px solid #111; }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="profile.jpg" alt="Hossam Gmeay" class="profile-img">
         <h1>حسام جميعي</h1>
-        <div class="experience-badge">19 عاماً من الخبرة والاستشارات العقارية</div>
-        <p style="max-width: 600px; margin: 20px auto; color: #aaa;">
-            شريك استراتيجي للمستثمرين والمطورين. مؤسس <b>Hossam Gmeay Academy</b> وقائد منظومة <b>The Millionaire Club</b>.
+        <div class="experience-badge">19 عاماً من الخبرة في مجال المبيعات</div>
+        <p style="max-width: 700px; margin: 25px auto; color: #ccc; font-size: 1.1rem;">
+            استشاري متخصص في إدارة المبيعات وتطوير الاستثمارات العقارية. <br>
+            مؤسس <b>Hossam Gmeay Academy</b> وقائد <b>The Millionaire Club</b>.
         </p>
     </header>
 
     <div class="brand-section">
         <div class="brand-card">
-            <i class="fas fa-city"></i>
+            <i class="fas fa-chart-line"></i>
             <h3>Power Land Property</h3>
-            <p>السيادة في السوق العقاري</p>
+            <p>السيادة العقارية والأداء القوي</p>
         </div>
         <div class="brand-card">
-            <i class="fas fa-users"></i>
+            <i class="fas fa-award"></i>
             <h3>The Millionaire Club</h3>
-            <p>مجتمع صناعة النجاح</p>
-        </div>
-        <div class="brand-card">
-            <i class="fas fa-university"></i>
-            <h3>HG Academy</h3>
-            <p>تطوير الكوادر والخبرات</p>
+            <p>مجتمع صناع النجاح المالي</p>
         </div>
     </div>
 
     <section class="consulting-form">
-        <h2 style="text-align: center; color: var(--sky-blue);">طلب استشارة استثمارية (VIP)</h2>
-        <p style="text-align: center; font-size: 0.9rem; color: #888; margin-bottom: 30px;">برجاء ملء البيانات بدقة لتقديم أفضل تحليل لمشروعك</p>
+        <h2 style="text-align: center; color: var(--sky-blue); margin-bottom: 30px;">طلب استشارة VIP</h2>
 
         <form id="consultingForm">
             <div class="form-group">
                 <label>الاسم بالكامل</label>
-                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="text" id="name" placeholder="أدخل اسمك الثلاثي" required>
             </div>
             
             <div class="form-group">
-                <label>رقم الهاتف (كود الدولة)</label>
-                <input type="tel" id="phone" placeholder="+20..." required>
+                <label>رقم الهاتف</label>
+                <input type="tel" id="phone" placeholder="01xxxxxxxxx" required>
             </div>
 
             <div class="form-group">
-                <label>أنت تطلب الاستشارة بصفتك:</label>
-                <select id="identity">
-                    <option value="مشتري فردي">مشتري فردي (Individual Buyer)</option>
-                    <option value="مستثمر عقاري">مستثمر عقاري (Real Estate Investor)</option>
-                    <option value="عن شركة">باسم شركة (On behalf of a company)</option>
+                <label>نوع الاستشارة المطلوبة (المصفوفة العقارية):</label>
+                <select id="unit_type" required>
+                    <option value="" disabled selected>اختر نوع الوحدة من القائمة...</option>
+                    <option value="سكني - سكن رئيسي">وحدة سكنية - سكن رئيسي</option>
+                    <option value="سكني - سياحي">وحدة سكنية - سياحي / ساحلي</option>
+                    <option value="إداري - مكاتب">مكاتب إدارية</option>
+                    <option value="تجاري - محلات">وحدات تجارية / محلات</option>
+                    <option value="طبي - عيادات">عيادات / وحدات طبية</option>
+                    <option value="استثماري - إعادة بيع">استثمار بغرض إعادة البيع</option>
+                    <option value="استثماري - إيجار">استثمار بغرض الإيجار</option>
+                    <option value="أخرى - استشارة عامة">غير محدد - أحتاج توجيه</option>
                 </select>
             </div>
 
             <div class="form-group">
-                <label>الميزانية التقديرية (EGP)</label>
+                <label>الميزانية التقديرية (EGP):</label>
                 <select id="budget">
                     <option value="3-5 مليون">من 3 إلى 5 مليون</option>
                     <option value="5-10 مليون">من 5 إلى 10 مليون</option>
@@ -175,41 +164,24 @@
             </div>
 
             <div class="form-group">
-                <label>نوع الوحدة المطلوب الاستثمار بها:</label>
-                <div class="checkbox-group">
-                    <div class="checkbox-item"><input type="checkbox" name="type" value="سكني - رئيسي"> سكني (سكن رئيسي)</div>
-                    <div class="checkbox-item"><input type="checkbox" name="type" value="سكني - مصيفي"> سكني (مصيفي/ساحلي)</div>
-                    <div class="checkbox-item"><input type="checkbox" name="type" value="إداري/مكاتب"> إداري / مكاتب</div>
-                    <div class="checkbox-item"><input type="checkbox" name="type" value="تجاري"> تجاري (Retail)</div>
-                    <div class="checkbox-item"><input type="checkbox" name="type" value="طبي"> عيادات / طبي</div>
-                    <div class="checkbox-item"><input type="checkbox" name="type" value="إعادة بيع"> استثمار بغرض البيع</div>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>الجدول الزمني المتوقع للشراء:</label>
-                <select id="timeline">
-                    <option value="خلال أسبوعين">خلال أسبوعين</option>
-                    <option value="خلال شهر">خلال شهر</option>
-                    <option value="خلال 3 أشهر">خلال 3 أشهر</option>
-                    <option value="بحث فقط">مجرد بحث حالياً</option>
+                <label>المنطقة المفضلة للاستثمار:</label>
+                <select id="location">
+                    <option value="القاهرة الجديدة">القاهرة الجديدة (التجمع)</option>
+                    <option value="العاصمة الإدارية">العاصمة الإدارية الجديدة</option>
+                    <option value="زايد / أكتوبر">الشيخ زايد / 6 أكتوبر</option>
+                    <option value="الساحل الشمالي">الساحل الشمالي</option>
+                    <option value="العين السخنة">العين السخنة</option>
+                    <option value="البحر الأحمر">البحر الأحمر</option>
+                    <option value="أخرى">أماكن أخرى مقترحة</option>
                 </select>
             </div>
 
-            <div class="form-group">
-                <label>المنطقة المفضلة:</label>
-                <input type="text" id="location" placeholder="مثلاً: القاهرة الجديدة، العاصمة، أكتوبر...">
-            </div>
-
-            <button type="submit" class="submit-btn">إرسال البيانات للمستشار حسام جميعي <i class="fab fa-whatsapp"></i></button>
+            <button type="submit" class="submit-btn">إرسال الطلب للمستشار حسام جميعي <i class="fab fa-whatsapp"></i></button>
         </form>
     </section>
 
     <footer>
-        <p>© 2026 جميع الحقوق محفوظة لـ <b>Hossam Gmeay Academy</b></p>
-        <div style="margin-top: 10px;">
-            <a href="https://t.me/The_Mllionaire_Club" style="color: var(--sky-blue); text-decoration: none;">The Millionaire Club</a>
-        </div>
+        <p>© 2026 Hossam Gmeay Academy - جميع الحقوق محفوظة</p>
     </footer>
 
     <script>
@@ -218,34 +190,24 @@
             
             const name = document.getElementById('name').value;
             const phone = document.getElementById('phone').value;
-            const identity = document.getElementById('identity').value;
+            const unitType = document.getElementById('unit_type').value;
             const budget = document.getElementById('budget').value;
-            const timeline = document.getElementById('timeline').value;
             const location = document.getElementById('location').value;
             
-            // جمع أنواع الوحدات المختارة
-            let types = [];
-            document.querySelectorAll('input[name="type"]:checked').forEach((checkbox) => {
-                types.push(checkbox.value);
-            });
-
-            const myNumber = "201030436160"; // رقمك الذي حددته سابقاً
+            const myNumber = "201030436160"; 
             
-            const message = `🏛️ *طلب استشارة استثمارية جديدة*%0A` +
+            const message = `🏢 *طلب استشارة VIP من حسام جميعي*%0A` +
                             `--------------------------------%0A` +
-                            `👤 *العميل:* ${name}%0A` +
-                            `📞 *رقم الهاتف:* ${phone}%0A` +
-                            `🎭 *الصفة:* ${identity}%0A` +
+                            `👤 *الاسم:* ${name}%0A` +
+                            `📞 *الهاتف:* ${phone}%0A` +
+                            `🏘️ *نوع الوحدة:* ${unitType}%0A` +
                             `💰 *الميزانية:* ${budget}%0A` +
-                            `🏘️ *الاهتمام:* ${types.join(', ')}%0A` +
-                            `📍 *المنطقة:* ${location}%0A` +
-                            `⏳ *الجدول الزمني:* ${timeline}%0A` +
+                            `📍 *المكان المفضل:* ${location}%0A` +
                             `--------------------------------%0A` +
-                            `✅ تم الإرسال من خلال سيستم الأكاديمية`;
+                            `✅ تم الإرسال عبر السيستم الاحترافي للأكاديمية`;
 
             window.open(`https://wa.me/${myNumber}?text=${message}`, '_blank');
         });
     </script>
 </body>
 </html>
-
