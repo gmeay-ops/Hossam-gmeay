@@ -1,160 +1,276 @@
-<section class="consulting-form">
-    <h2 style="text-align: center; color: var(--sky-blue); margin-bottom: 10px;">نموذج استشارة VIP شاملة</h2>
-    <p style="text-align: center; color: #888; margin-bottom: 30px;">برجاء ملء البيانات بدقة لتقديم أفضل تحليل عقاري لك</p>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حسام جميعي - Hossam Gmeay | الاستشاري العقاري</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --sky-blue: #00d2ff;
+            --deep-black: #050505;
+            --gold: #c5a059;
+            --card-bg: #111;
+            --red-discount: #ff4d4d;
+            --green-free: #2ecc71;
+        }
 
-    <form id="consultingForm">
-        <h3 style="color: var(--gold); border-bottom: 1px solid #333; padding-bottom: 10px;">1. البيانات الأساسية</h3>
-        <div class="form-group">
-            <label>الاسم بالكامل</label>
-            <input type="text" id="name" placeholder="أدخل اسمك الثلاثي" required>
-        </div>
-        <div class="form-group">
-            <label>رقم الهاتف (واتساب بصيغة الدولة)</label>
-            <input type="tel" id="phone" placeholder="مثال: 201065652642" required>
-        </div>
-        <div class="form-group">
-            <label>البريد الإلكتروني</label>
-            <input type="email" id="email" placeholder="example@mail.com">
-        </div>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--deep-black);
+            color: #fff;
+            margin: 0; padding: 0;
+            line-height: 1.6;
+        }
 
-        <h3 style="color: var(--gold); border-bottom: 1px solid #333; padding-bottom: 10px; margin-top: 30px;">2. تفاصيل العقار المطلوبة</h3>
-        <div class="form-group">
-            <label>بصفتك ماذا تطلب الاستشارة؟</label>
-            <select id="buyer_type">
-                <option value="مشتري فردي">مشتري فردي</option>
-                <option value="نيابة عن شركة">نيابة عن شركة (مسؤول مبيعات/إدارة)</option>
-                <option value="مستثمر عقاري">مستثمر عقاري محترف</option>
-            </select>
-        </div>
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(180deg, #111 0%, #050505 100%);
+            border-bottom: 1px solid #222;
+        }
 
-        <div class="form-group">
-            <label>نوع الوحدة المستهدفة:</label>
-            <select id="unit_type" required>
-                <option value="سكني - سكن رئيسي">وحدة سكنية - سكن رئيسي</option>
-                <option value="سكني - سياحي / ساحلي">وحدة سكنية - سياحي / ساحلي</option>
-                <option value="إداري - مكاتب">مكاتب إدارية</option>
-                <option value="تجاري - محلات">وحدات تجارية / محلات</option>
-                <option value="طبي - عيادات">عيادات / وحدات طبية</option>
-                <option value="استثمار - إعادة بيع">استثمار بغرض إعادة البيع</option>
-                <option value="استثمار - للإيجار">استثمار بغرض الإيجار</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label>المساحة المطلوبة (بالأمتار):</label>
-            <input type="number" id="area" placeholder="مثال: 150">
-        </div>
-
-        <div class="form-group">
-            <label>المنطقة المفضلة:</label>
-            <select id="location_pref">
-                <option value="مدينة السادات">مدينة السادات</option>
-                <option value="القاهرة الجديدة">القاهرة الجديدة</option>
-                <option value="العاصمة الإدارية">العاصمة الإدارية</option>
-                <option value="الشيخ زايد / أكتوبر">الشيخ زايد / أكتوبر</option>
-                <option value="الساحل الشمالي">الساحل الشمالي</option>
-                <option value="العين السخنة">العين السخنة</option>
-                <option value="أخرى">أخرى / أحتاج اقتراح</option>
-            </select>
-        </div>
-
-        <h3 style="color: var(--gold); border-bottom: 1px solid #333; padding-bottom: 10px; margin-top: 30px;">3. الميزانية وخطة الدفع</h3>
-        <div class="form-group">
-            <label>إجمالي الميزانية التقديرية (EGP):</label>
-            <select id="budget">
-                <option value="3-5 مليون">3 - 5 مليون</option>
-                <option value="5-10 مليون">5 - 10 مليون</option>
-                <option value="10-20 مليون">10 - 20 مليون</option>
-                <option value="أكثر من 20 مليون">أكثر من 20 مليون</option>
-                <option value="غير محدد">غير محدد حالياً</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label>المقدم المتاح حالياً (كاش):</label>
-            <input type="number" id="down_payment" placeholder="أدخل مبلغ المقدم المتاح">
-        </div>
-
-        <div class="form-group">
-            <label>طريقة الدفع المفضلة:</label>
-            <select id="payment_method">
-                <option value="كاش بالكامل">كاش بالكامل (Full Cash)</option>
-                <option value="تقسيط">تقسيط (Installments)</option>
-                <option value="هجين (مقدم + تقسيط)">هجين (مقدم + تقسيط)</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label>مدة التقسيط المطلوبة (سنوات):</label>
-            <select id="installment_years">
-                <option value="3 سنوات">3 سنوات</option>
-                <option value="5 سنوات">5 سنوات</option>
-                <option value="7 سنوات">7 سنوات</option>
-                <option value="10 سنوات">10 سنوات</option>
-            </select>
-        </div>
-
-        <h3 style="color: var(--gold); border-bottom: 1px solid #333; padding-bottom: 10px; margin-top: 30px;">4. تفاصيل إضافية</h3>
-        <div class="form-group">
-            <label>متى تخطط للشراء؟</label>
-            <select id="timeline">
-                <option value="خلال أسبوعين">خلال أسبوعين</option>
-                <option value="خلال شهر">خلال شهر</option>
-                <option value="خلال 3 أشهر">خلال 3 أشهر</option>
-                <option value="مجرد بحث حالياً">مجرد بحث حالياً</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label>مواصفات لا غنى عنها (غرف، دور أرضي، إطلالة.. إلخ):</label>
-            <textarea id="requirements" style="width:100%; padding:14px; border-radius:10px; background:#000; color:#fff; border:1px solid #333; font-family:'Cairo';" rows="3"></textarea>
-        </div>
-
-        <button type="submit" class="submit-btn">إرسال الاستمارة للواتساب <i class="fab fa-whatsapp"></i></button>
-    </form>
-</section>
-
-<script>
-    document.getElementById('consultingForm').addEventListener('submit', function(e) {
-        e.preventDefault();
+        h1 { font-size: 3.2rem; margin: 10px 0; color: var(--sky-blue); font-weight: 900; }
         
-        // تجميع كل البيانات
-        const data = {
-            name: document.getElementById('name').value,
-            phone: document.getElementById('phone').value,
-            email: document.getElementById('email').value,
-            buyerType: document.getElementById('buyer_type').value,
-            unitType: document.getElementById('unit_type').value,
-            area: document.getElementById('area').value,
-            location: document.getElementById('location_pref').value,
-            budget: document.getElementById('budget').value,
-            downPayment: document.getElementById('down_payment').value,
-            payMethod: document.getElementById('payment_method').value,
-            years: document.getElementById('installment_years').value,
-            timeline: document.getElementById('timeline').value,
-            reqs: document.getElementById('requirements').value
+        .badges-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .badge {
+            background: var(--gold);
+            color: #000;
+            padding: 8px 25px;
+            border-radius: 30px;
+            font-weight: 900;
+            font-size: 1.1rem;
+        }
+
+        .consultations-badge { background: #fff; color: #000; }
+
+        /* Offer & Timer */
+        .offer-box {
+            margin-top: 30px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid #333;
+            padding: 20px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        .price-line { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+        .old-price { text-decoration: line-through; color: var(--red-discount); margin-right: 10px; }
+        .free-text { color: var(--green-free); animation: flash 1.5s infinite; }
+
+        .timer-container {
+            margin-top: 15px;
+            color: var(--red-discount);
+            font-weight: 900;
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+        }
+
+        @keyframes flash { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+
+        /* Form Styling */
+        .consulting-form {
+            max-width: 800px;
+            margin: 40px auto 80px;
+            background: #0f0f0f;
+            padding: 40px;
+            border-radius: 25px;
+            border: 1px solid #222;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+        }
+
+        h3 { color: var(--gold); border-bottom: 1px solid #222; padding-bottom: 10px; margin-top: 35px; }
+        .form-group { margin-bottom: 25px; }
+        label { display: block; margin-bottom: 10px; font-weight: 700; color: #eee; }
+        
+        input, select, textarea {
+            width: 100%; padding: 15px; border-radius: 12px; border: 1px solid #333;
+            background: #000; color: #fff; font-family: 'Cairo'; font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        .submit-btn {
+            width: 100%; padding: 22px; border: none; border-radius: 15px;
+            background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+            color: #000; font-weight: 900; font-size: 1.4rem; cursor: pointer;
+            transition: 0.3s; margin-top: 20px;
+        }
+
+        .submit-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0, 210, 255, 0.4); }
+
+        footer { text-align: center; padding: 40px; color: #444; border-top: 1px solid #111; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>حسام جميعي - Hossam Gmeay</h1>
+        
+        <div class="badges-container">
+            <div class="badge"><i class="fas fa-briefcase"></i> 19 عاماً خبرة مبيعات</div>
+            <div class="badge consultations-badge"><i class="fas fa-check-circle"></i> +300 استشارة تمت بنجاح</div>
+        </div>
+
+        <div class="offer-box">
+            <div class="price-line">
+                <span class="old-price">1000 ج.م</span>
+                الاستشارة حالياً: <span class="free-text">مجانية لفترة محدودة</span>
+            </div>
+            <div style="color: #888; margin-bottom: 5px;">ينتهي العرض المجاني خلال:</div>
+            <div id="countdown" class="timer-container">23:40:00</div>
+        </div>
+
+        <p style="margin-top: 20px; color: #ccc;">تحت إدارة <b>Hossam Gmeay Academy</b></p>
+    </header>
+
+    <section class="consulting-form">
+        <h2 style="text-align: center; color: var(--sky-blue);">نموذج استشارة VIP</h2>
+        
+        <form id="consultingForm">
+            <h3>1. معلومات التواصل</h3>
+            <div class="form-group">
+                <label>الاسم بالكامل</label>
+                <input type="text" id="name" placeholder="أدخل اسمك" required>
+            </div>
+            <div class="form-group">
+                <label>رقم الهاتف (واتساب)</label>
+                <input type="tel" id="phone" placeholder="مثال: 010xxxxxxxx" required>
+            </div>
+            <div class="form-group">
+                <label>البريد الإلكتروني (إن وجد)</label>
+                <input type="email" id="email" placeholder="email@example.com">
+            </div>
+
+            <h3>2. تفاصيل الوحدة المطلوبة</h3>
+            <div class="form-group">
+                <label>بصفتك ماذا تطلب الاستشارة؟</label>
+                <select id="buyer_type">
+                    <option value="مشتري فردي">مشتري فردي</option>
+                    <option value="نيابة عن شركة">نيابة عن شركة</option>
+                    <option value="مستثمر عقاري">مستثمر عقاري</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>نوع الوحدة:</label>
+                <select id="unit_type">
+                    <option value="سكني - سكن رئيسي">سكني - سكن رئيسي</option>
+                    <option value="سكني - سياحي">سكني - سياحي / ساحلي</option>
+                    <option value="إداري">إداري - مكاتب</option>
+                    <option value="تجاري">تجاري - محلات</option>
+                    <option value="طبي">طبي - عيادات</option>
+                    <option value="استثماري">استثمار - إعادة بيع</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>المساحة التقديرية (م٢):</label>
+                <input type="number" id="area" placeholder="مثال: 120">
+            </div>
+            <div class="form-group">
+                <label>المنطقة المفضلة:</label>
+                <select id="location">
+                    <option value="مدينة السادات">مدينة السادات</option>
+                    <option value="القاهرة الجديدة">القاهرة الجديدة</option>
+                    <option value="العاصمة الإدارية">العاصمة الإدارية</option>
+                    <option value="الشيخ زايد / أكتوبر">الشيخ زايد / أكتوبر</option>
+                    <option value="الساحل الشمالي">الساحل الشمالي</option>
+                    <option value="أخرى">مناطق أخرى</option>
+                </select>
+            </div>
+
+            <h3>3. الميزانية ونظام الدفع</h3>
+            <div class="form-group">
+                <label>إجمالي الميزانية (EGP):</label>
+                <select id="budget">
+                    <option value="3-5 مليون">3 - 5 مليون</option>
+                    <option value="5-10 مليون">5 - 10 مليون</option>
+                    <option value="أكثر من 20 مليون">أكثر من 20 مليون</option>
+                    <option value="غير محدد">غير محدد</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>المقدم المتاح حالياً:</label>
+                <input type="number" id="down_payment" placeholder="المبلغ المتوفر حالياً">
+            </div>
+            <div class="form-group">
+                <label>مدة التقسيط المطلوبة (سنوات):</label>
+                <input type="number" id="years" placeholder="مثال: 7">
+            </div>
+
+            <h3>4. معلومات إضافية</h3>
+            <div class="form-group">
+                <label>متى تخطط للشراء؟</label>
+                <select id="timeline">
+                    <option value="خلال أسبوعين">خلال أسبوعين</option>
+                    <option value="خلال شهر">خلال شهر</option>
+                    <option value="خلال 3 أشهر">خلال 3 أشهر</option>
+                    <option value="مجرد بحث حالياً">مجرد بحث حالياً</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>مواصفات خاصة (عدد الغرف، إطلالة، إلخ):</label>
+                <textarea id="notes" rows="3" placeholder="اكتب أي تفاصيل أخرى تهمك"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">احجز استشارتك المجانية الآن <i class="fab fa-whatsapp"></i></button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Hossam Gmeay Academy | ثقة في الله نجاح</p>
+    </footer>
+
+    <script>
+        // العداد التنازلي
+        function startCountdown(duration) {
+            let timer = duration, hours, minutes, seconds;
+            setInterval(function () {
+                hours = parseInt(timer / 3600, 10);
+                minutes = parseInt((timer % 3600) / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                document.getElementById('countdown').textContent = hours + ":" + minutes + ":" + seconds;
+
+                if (--timer < 0) timer = duration;
+            }, 1000);
+        }
+
+        window.onload = function () {
+            let startTime = (23 * 3600) + (40 * 60);
+            startCountdown(startTime);
         };
 
-        const myNumber = "201065652642"; 
-        
-        // تنسيق الرسالة لتصلك منظمة جداً
-        const message = `🏛️ *استمارة استشارة VIP جديدة*%0A` +
-                        `--------------------------------%0A` +
-                        `👤 *العميل:* ${data.name}%0A` +
-                        `📞 *الهاتف:* ${data.phone}%0A` +
-                        `📧 *البريد:* ${data.email}%0A%0A` +
-                        `🏢 *نوع الوحدة:* ${data.unitType}%0A` +
-                        `📐 *المساحة:* ${data.area} متر%0A` +
-                        `📍 *المنطقة:* ${data.location}%0A%0A` +
-                        `💰 *الميزانية:* ${data.budget}%0A` +
-                        `💵 *المقدم:* ${data.downPayment} ج.م%0A` +
-                        `💳 *النظام:* ${data.payMethod}%0A` +
-                        `🗓️ *مدة التقسيط:* ${data.years}%0A%0A` +
-                        `⏳ *موعد الشراء:* ${data.timeline}%0A` +
-                        `📝 *ملاحظات:* ${data.reqs}%0A` +
-                        `--------------------------------%0A` +
-                        `✅ تم الإرسال من Hossam Gmeay Academy`;
+        // إرسال البيانات
+        document.getElementById('consultingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const myNumber = "201065652642";
+            
+            const message = `🏛️ *طلب استشارة VIP جديدة*%0A` +
+                `👤 *الاسم:* ${document.getElementById('name').value}%0A` +
+                `📞 *الهاتف:* ${document.getElementById('phone').value}%0A` +
+                `🏘️ *الوحدة:* ${document.getElementById('unit_type').value}%0A` +
+                `📐 *المساحة:* ${document.getElementById('area').value}م%0A` +
+                `📍 *المنطقة:* ${document.getElementById('location').value}%0A` +
+                `💰 *الميزانية:* ${document.getElementById('budget').value}%0A` +
+                `💵 *المقدم:* ${document.getElementById('down_payment').value}%0A` +
+                `🗓️ *التقسيط:* ${document.getElementById('years').value} سنوات%0A` +
+                `⏳ *الموعد:* ${document.getElementById('timeline').value}%0A` +
+                `📝 *ملاحظات:* ${document.getElementById('notes').value}`;
 
-        window.open(`https://wa.me/${myNumber}?text=${message}`, '_blank');
-    });
-</script>
+            window.open(`https://wa.me/${myNumber}?text=${message}`, '_blank');
+        });
+    </script>
+</body>
+</html>
